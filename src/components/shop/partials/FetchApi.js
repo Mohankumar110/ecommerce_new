@@ -10,7 +10,7 @@ export const cartListProduct = async () => {
     }
   }
   try {
-    let res = await axios.post(`${apiURL}/api/product/cart-product`, {
+    let res = await axios.post(`https://ecommerce-backend-ygm7.onrender.com/api/product/cart-product`, {
       productArray,
     });
     return res.data;
