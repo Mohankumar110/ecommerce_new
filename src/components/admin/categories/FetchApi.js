@@ -36,7 +36,7 @@ export const createCategory = async ({
 
   try {
     let res = await axios.post(
-      `${apiURL}/api/category/add-category`,
+      `https://ecommerce-backend-ygm7.onrender.com/api/category/add-category`,
       formData,
       Headers()
     );
