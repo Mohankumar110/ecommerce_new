@@ -2,7 +2,7 @@ import React, { Fragment, useContext, useEffect } from "react";
 import { DashboardContext } from "./";
 import { uploadImage, sliderImages, deleteImage } from "./Action";
 
-const apiURL = process.env.REACT_APP_API_URL;
+const apiURL = "https://ecommerce-backend-ygm7.onrender.com";
 
 const Customize = () => {
   const { data, dispatch } = useContext(DashboardContext);

@@ -3,7 +3,7 @@ import moment from "moment";
 import { fetchOrderByUser } from "./Action";
 import Layout, { DashboardUserContext } from "./Layout";
 
-const apiURL = process.env.REACT_APP_API_URL;
+const apiURL = "https://ecommerce-backend-ygm7.onrender.com";
 
 const TableHeader = () => {
   return (

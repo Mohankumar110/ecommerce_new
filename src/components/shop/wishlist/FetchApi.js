@@ -1,10 +1,10 @@
 import axios from "axios";
-const apiURL = process.env.REACT_APP_API_URL;
+const apiURL = "https://ecommerce-backend-ygm7.onrender.com";
 
 export const wishListProducts = async () => {
   let productArray = JSON.parse(localStorage.getItem("wishList"));
   try {
-    let res = await axios.post(`https://ecommerce-backend-ygm7.onrender.com/api/product/wish-product`, {
+    let res = await axios.post(`${apiURL}/api/product/wish-product`, {
       productArray,
     });
     return res.data;

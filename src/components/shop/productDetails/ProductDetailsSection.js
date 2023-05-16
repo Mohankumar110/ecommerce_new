@@ -12,7 +12,7 @@ import { isWishReq, unWishReq, isWish } from "../home/Mixins";
 import { updateQuantity, slideImage, addToCart, cartList } from "./Mixins";
 import { totalCost } from "../partials/Mixins";
 
-const apiURL = process.env.REACT_APP_API_URL;
+const apiURL = "https://ecommerce-backend-ygm7.onrender.com";
 
 const ProductDetailsSection = (props) => {
   let { id } = useParams();

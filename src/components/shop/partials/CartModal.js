@@ -6,7 +6,7 @@ import { isAuthenticate } from "../auth/fetchApi";
 import { cartList } from "../productDetails/Mixins";
 import { subTotal, quantity, totalCost } from "./Mixins";
 
-const apiURL = process.env.REACT_APP_API_URL;
+const apiURL = "https://ecommerce-backend-ygm7.onrender.com";
 
 const CartModal = () => {
   const history = useHistory();

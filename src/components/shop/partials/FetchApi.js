@@ -1,5 +1,5 @@
 import axios from "axios";
-const apiURL = process.env.REACT_APP_API_URL;
+const apiURL = "https://ecommerce-backend-ygm7.onrender.com";
 
 export const cartListProduct = async () => {
   let carts = JSON.parse(localStorage.getItem("cart"));
@@ -10,7 +10,7 @@ export const cartListProduct = async () => {
     }
   }
   try {
-    let res = await axios.post(`https://ecommerce-backend-ygm7.onrender.com/api/product/cart-product`, {
+    let res = await axios.post(`${apiURL}/api/product/cart-product`, {
       productArray,
     });
     return res.data;
